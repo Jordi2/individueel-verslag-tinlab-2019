@@ -75,7 +75,8 @@ In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De defin
 
 \subsection{Requirements}
 
-Requirements beschrijven fenomenen uit de buitenwereld die het probleem beschrijven. \newline
+Requirements beschrijven fenomenen uit de buitenwereld die het probleem beschrijven. \newline \newline
+Mogelijke methode voor het vaststellen van requirments zijn: \newline
 - vragen stellen / survey \newline
 - observeren \newline
 - brainstormen \newline
@@ -91,7 +92,11 @@ Specificaties zijn de eisen waaraan de oplossing of product aan moet voldoen en 
 
 \subsection{De Kripke structuur}
 
-Belangrijke termen states en transities.
+Belangrijke termen voor het bespreken van Kripke structuren zijn states en transities. \newline
+
+Een state beschrijft de toestand waarin een systeem zich bevindt. In het geval dat de state niet duidelijk is voor de gebruiker dan wordt dat mode confusion genoemd.
+
+Transities zijn de overgangen van één state naar de anderen. 
 
 \begin{figure}[!h]
 	\centering
@@ -103,7 +108,7 @@ Belangrijke termen states en transities.
 \subsection{Soorten modellen}
 
 \textbf{World vs. machine:}
-requirements en vereiste.
+requirements en vereiste. \newline \newline
 \textbf{4 variabelen methode:}
 
 Modellen voor computer systemen gebruiken vaak antropomorfisme analogie en intuïtieve conclusies wat tot lager precisie kan leiden. Het vier variabelen model helpt om software vereisten met groter precisie vast te stellen, door deze te modelleren op een manier zoals vaak door ingenieurs wordt toegepast. \cite{parnas1995functional} 
@@ -117,14 +122,20 @@ Input/output/gecontroleerde variabelen/gemonitorde variabelen.
 \end{figure}
 
 \subsection{Tijd}
-//Behandeld in week 2
+//Behandeld in week 2 \newline
+In Uppaal wordt tijd globaal op hetzelfde tempo bijgehouden. Tijd wordt in klokken bijgehouden en kan op elk moment worden uitgelezen of gereset. \cite{uppaalsmalltutorial}
 \subsection{Guards en invarianten}
-//Behandeld in week 2
+//Behandeld in week 2 \newline 
+Guards zijn condities die op transities worden geplaatst, aan deze condities moet worden voldaan voordat deze transitie mogelijk is.\cite{uppaalsmalltutorial}
+
+
+guards condities op transities, 
 
 \subsection{Deadlock}
 
 \subsection{Zeno gedrag}
 //Behandeld in week 2
+a\cite{leine2011zeno}
 \section{Logica}
 
 \subsection{Propositielogica}
@@ -136,6 +147,8 @@ Input/output/gecontroleerde variabelen/gemonitorde variabelen.
 \subsection{Dualiteiten}
 
 \section{Computation tree logic}
+//week 3
+A Always E Exists F Eventually G Globally X Next
 
 \subsection{De computation tree}
 
@@ -161,22 +174,38 @@ Input/output/gecontroleerde variabelen/gemonitorde variabelen.
 
 \newpage
 \subsection{Temp log:}
+Sheets:
+
+inleiding w1
+state transition diagrams w2
+modellen w2
+computation tree logic w3
+
+
 week 1: 
 world vs. machine
-requirements en specifications
+requirements en specifications |
 systems engineering vs. software engineering
-4 variablen
+4 variablen |
 week2:
 tijd
 guards en invarianten
 deadlocks
 week3:
+logica
+temporele logica (ctl)
+(Computation tree logic
+Linear tree logic
+CTL*: combinatie van bovenstaande twee)
+//zie dia voor example images van ctl logica
+
+
 
 Wat is een goed model? cite the links from powerpoint, first links describes what the dia explains, deze link wordt ook gebruikt om de eindopdracht te beoordelen, eindverslag moet afweging laten zien wat betreft je keuzes, wat zijn je argumenten?
 
 google scholar "to predict and serve?"
 
-een goed model moet het verschil tusssen ruis en echte informatie kunnen aantonen.
+een goed model moet het verschil tussen ruis en echte informatie kunnen aantonen.
 
 uppaal for sharing int below 5 don't use global variables
 
