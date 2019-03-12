@@ -34,7 +34,7 @@
 
 \newpage
 \section{Inleiding}
-In dit document wordt uitleg, voorbeelden en uitwerkingen van oefeningen beschreven. 
+In dit document wordt samengevat uitleg, voorbeelden en uitwerkingen van oefeningen beschreven. Deze samenvatting dient als leerboekje waar naar gerefereerd kan worden. 
 
 
 royce waterfall method
@@ -71,11 +71,13 @@ test
 testing
 \section{Requirements}
 
-In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De definities voor deze termen zijn die in dit document zullen worden aangehouden zijn die van %\cite{gunter2000reference}. \newline
+In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De definities voor deze termen zijn die in dit document zullen worden aangehouden zijn die van \cite{thompson2000requirements}. \newline
 
 \subsection{Requirements}
 
-Requirements beschrijven fenomenen uit de buitenwereld die het probleem beschrijven. \newline \newline
+Requirements beschrijven fenomenen uit de buitenwereld die een probleem beschrijven. \newline \newline
+Licht, tempratuur, mensen en andere al bestaande systemen zijn allemaal voorbeelden van fenomenen die door requirements beschreven kunnen worden. \newline
+
 Mogelijke methode voor het vaststellen van requirments zijn: \newline
 - vragen stellen / survey \newline
 - observeren \newline
@@ -86,17 +88,15 @@ Mogelijke methode voor het vaststellen van requirments zijn: \newline
 
 \subsection{specificaties}
 
-Specificaties zijn de eisen waaraan de oplossing of product aan moet voldoen en mee wordt geëvalueerd.
+Specificaties zijn de eisen waaraan de oplossing of product aan moet voldoen en mee wordt geëvalueerd. Software en hardware in voorbeelden van specificaties.
 
 \section{Modellen}
 
 \subsection{De Kripke structuur}
 
-Belangrijke termen voor het bespreken van Kripke structuren zijn states en transities. \newline
+Kripke structuren zijn een manier om het gedrag van een systeem te modelleren. Belangrijke termen voor het bespreken van Kripke structuren zijn states en transities. \newline
 
-Een state beschrijft de toestand waarin een systeem zich bevindt. In het geval dat de state niet duidelijk is voor de gebruiker dan wordt dat mode confusion genoemd.
-
-Transities zijn de overgangen van één state naar de anderen. 
+Een state beschrijft de toestand waarin een systeem zich bevindt. In het geval dat de state niet duidelijk is voor de gebruiker dan wordt dat mode confusion genoemd. Transities zijn de overgangen van één state naar de anderen. 
 
 \begin{figure}[!h]
 	\centering
@@ -113,12 +113,14 @@ requirements en vereiste. \newline \newline
 
 Modellen voor computer systemen gebruiken vaak antropomorfisme analogie en intuïtieve conclusies wat tot lager precisie kan leiden. Het vier variabelen model helpt om software vereisten met groter precisie vast te stellen, door deze te modelleren op een manier zoals vaak door ingenieurs wordt toegepast. \cite{parnas1995functional} 
 
-Input/output/gecontroleerde variabelen/gemonitorde variabelen.
+Zoals de naam suggereert bestaat het vier variabelen model uit vier onderdelen. Input, output, gecontroleerde variabelen en gemonitorde variabelen. Als eerste de gemonteerde variabelen die buiten het systeem bestaan en worden opgenomen door sensoren, waarna deze input is voor de software. Deze input draagt bij aan de output of acties die het systeem in de buitenwereld creëert, de resultaten hiervan heten de gecontroleerde variabelen. Zie ook Figuur ~\ref{fig:four_Variables} hieronder.
+
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{four_Variables}
     \caption{Vier variabelen model \cite{thompson2000requirements}}
-	%\label{fig:figure2}
+	\label{fig:four_Variables}
 \end{figure}
 
 \subsection{Tijd}
@@ -198,6 +200,8 @@ temporele logica (ctl)
 Linear tree logic
 CTL*: combinatie van bovenstaande twee)
 //zie dia voor example images van ctl logica
+week4:
+
 
 
 
