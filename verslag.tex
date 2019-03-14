@@ -135,10 +135,14 @@ guards condities op transities,
 
 \subsection{Deadlock}
 
+Een deadlock is een situatie waarin er nooit meer verdere state transities mogelijke zijn \cite{uppaalintro}.
+
 \subsection{Zeno gedrag}
 //Behandeld in week 2
-a\cite{leine2011zeno}
+Wanneer een model eem oneindig aantal transities kan maken in een bepaalde tijd dat wordt er gesproken van zeno gedrag \cite{uppaaltutorialmodelingpatterns} \cite{leine2011zeno}.
 \section{Logica}
+
+Dit is een herhaling van eerste jaars logica.
 
 \subsection{Propositielogica}
 
@@ -154,17 +158,29 @@ A Always E Exists F Eventually G Globally X Next
 
 \subsection{De computation tree}
 
-\subsection{Operator: AG}
+\subsection{Operator: Always Global (AG)}
 
-\subsection{Operator: EG}
+Een bepaalde propositie is waar voor elke mogelijke staat in het model.
 
-\subsection{Operator: AF}
+\subsection{Operator: Exists Global (EG)}
 
-\subsection{Operator: EF}
+Een staat waarin een bepaalde propositie waar is kan worden bereikt. Maar nadat deze is bereikt zal de propositie niet meer vals kunnen zijn.
 
-\subsection{Operator: AX}
+\subsection{Operator: Always Eventually (AF)}
 
-\subsection{Operator: EX}
+Elke tak van het model bevat een staat waarvoor een gegeven propositie waar zal zijn.
+
+\subsection{Operator: Exists Eventually (EF)}
+
+Het is mogelijke dat een bepaalde staat zal worden bereikt waarin de gegeven propositie waar is.
+
+\subsection{Operator: Always Next (AX)}
+
+Een bepaalde staat zal altijd worden opgevolgd door een staat waarvoor een bepaalde propositie waar zal zijn.
+
+\subsection{Operator: Exists Next (EX)}
+
+Een bepaalde staat kan een transitie uitvoeren naar een staat of staten waarvoor een bepaalde propositie waar is.
 
 \subsection{Operator: p U q}
 
@@ -172,7 +188,11 @@ A Always E Exists F Eventually G Globally X Next
 
 \subsection{Fairness}
 
+Een bepaalde conditie zal uiteindelijk waar zijn.
+
 \subsection{Liveness}
+
+Liveliness is the vereiste dat een bepaald doel in het systeem kan worden bereikt. Om dit mogelijk te maken is er Fairness nodig, als een bepaald process immers nooit draait dan kan het zijn dat een bepaald doel niet bereikbaar is \cite{fairnessandliveness}.
 
 \newpage
 \subsection{Temp log:}
