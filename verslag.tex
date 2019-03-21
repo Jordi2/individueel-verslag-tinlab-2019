@@ -41,15 +41,7 @@ royce waterfall method
 
 
 
-Onderwerp(en): 
-Nucleaire testen op het eiland Bikini Atoll.
-vlucht 1951 mode confusion turkish airlines
-kannon met dubbele loop, John Gilleland
-Tsjernobly 1986
-ariane 5 64 bit getal wrong format
 
-Context:
-bikini eilanden, bom die 5 megaton hogere yield had dan verwacht. vakkennis was er nog niet wat betreft physika om dit te kunnen voorspellen.
 
 
 World vs. machine:
@@ -65,10 +57,16 @@ Mode confusion
 
 
 
-\section{test}
-test
-\subsection{testing}
-testing
+\section{Case study}
+Hieronder staan case studies beschreven die de verschillende principes van dit document demonstreren.
+
+\subsection{Kanon met dubbele loop van John Gilleland}
+\subsubsection{Achtergrond}
+Het kanon met dubbele loop is een mislukt experimenteel wapen ontwikkeld in de 19e eeuw. Het idee achter het wapen was om twee kanonskogels te verbinden met ketting en iedere kanonskogel in zijn eigen loop te laden. Het concept van verbonden kanonskogels bestond al, deze ketting shotten werden gebruikt in een kanon met één loop om masten van schepen te verwoesten. De innovatie zat hem in de dubbele loop en er werd verwacht dat dit effectief zou zijn in het neermaaien van soldaten.
+\subsubsection{Wat ging er mis?}
+De lopen vuren niet tegelijkertijd. Hierdoor zijn de kanonskogels heel irregulier in waar zijn naartoe gaan. Het zet ook veel stress op de ketting waardoor deze kan breken.
+\subsubsection{Modellen}
+Met het gebruik van de modellen in hoofdstuk \ref{SoortenModellen}, zien we dat het probleem niet uit de buitenwereld komt maar binnen het systeem zelf plaatsvindt. In het vier variabelen model zou het kanon een probleem hebben in de actuatoren.
 \section{Requirements}
 
 In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De definities voor deze termen zijn die in dit document zullen worden aangehouden zijn die van \cite{thompson2000requirements}. \newline
@@ -76,10 +74,10 @@ In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De defin
 \subsection{Requirements}
 
 Requirements beschrijven fenomenen uit de buitenwereld die een probleem beschrijven. \newline \newline
-Licht, tempratuur, mensen en andere al bestaande systemen zijn allemaal voorbeelden van fenomenen die door requirements beschreven kunnen worden. \newline
+Licht, temperatuur, mensen en andere al bestaande systemen zijn allemaal voorbeelden van fenomenen die door requirements beschreven kunnen worden. \newline
 
-Mogelijke methode voor het vaststellen van requirments zijn: \newline
-- vragen stellen / survey \newline
+Mogelijke methode voor het vaststellen van requirements zijn: \newline
+- vragen stellen / enquête \newline
 - observeren \newline
 - brainstormen \newline
 - ervaring / literatuurstudie \newline
@@ -88,7 +86,7 @@ Mogelijke methode voor het vaststellen van requirments zijn: \newline
 
 \subsection{specificaties}
 
-Specificaties zijn de eisen waaraan de oplossing of product aan moet voldoen en mee wordt geëvalueerd. Software en hardware in voorbeelden van specificaties.
+Specificaties zijn de eisen waaraan de oplossing of product aan moet voldoen en mee wordt geëvalueerd. Software en hardware zijn voorbeelden van specificaties.
 
 \section{Modellen}
 
@@ -105,10 +103,11 @@ Een state beschrijft de toestand waarin een systeem zich bevindt. In het geval d
 	%\label{fig:figure2}
 \end{figure}
 
-\subsection{Soorten modellen}
+\subsection{Soorten modellen} \label{SoortenModellen}
 
-\textbf{World vs. machine:}
-requirements en vereiste. \newline \newline
+\textbf{World vs. machine:} 
+
+Er kan onderscheid worden gemaakt tussen de fenomenen die zich bevinden in de wereld buiten het systeem en de fenomenen die alleen in het systeem zelf bestaan. \newline
 \textbf{4 variabelen methode:}
 
 Modellen voor computer systemen gebruiken vaak antropomorfisme analogie en intuïtieve conclusies wat tot lager precisie kan leiden. Het vier variabelen model helpt om software vereisten met groter precisie vast te stellen, door deze te modelleren op een manier zoals vaak door ingenieurs wordt toegepast. \cite{parnas1995functional} 
@@ -138,13 +137,15 @@ guards condities op transities,
 Een deadlock is een situatie waarin er nooit meer verdere state transities mogelijke zijn \cite{uppaalintro}.
 
 \subsection{Zeno gedrag}
-//Behandeld in week 2
-Wanneer een model eem oneindig aantal transities kan maken in een bepaalde tijd dat wordt er gesproken van zeno gedrag \cite{uppaaltutorialmodelingpatterns} \cite{leine2011zeno}.
+//Behandeld in week 2 \newline
+Wanneer een model een oneindig aantal transities kan maken in een bepaalde tijd dat wordt er gesproken van zeno gedrag \cite{uppaaltutorialmodelingpatterns} \cite{leine2011zeno}.
 \section{Logica}
 
 Dit is een herhaling van eerste jaars logica.
 
 \subsection{Propositielogica}
+
+Propositie zijn uitspraken die waar of onwaar kunnen zijn. Propositielogica is houdt zich bezig met het redeneren van deze logica.
 
 \subsection{Predicatenlogica}
 
@@ -240,3 +241,12 @@ ebsilon/absilon-delta stelling wiskunde limiet begrip
 \end{document}
 
 
+Onderwerp(en): 
+Nucleaire testen op het eiland Bikini Atoll.
+vlucht 1951 mode confusion turkish airlines
+kannon met dubbele loop, John Gilleland
+Tsjernobly 1986
+ariane 5 64 bit getal wrong format
+
+Context:
+bikini eilanden, bom die 5 megaton hogere yield had dan verwacht. vakkennis was er nog niet wat betreft physika om dit te kunnen voorspellen.
