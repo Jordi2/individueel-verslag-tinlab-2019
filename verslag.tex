@@ -67,6 +67,15 @@ Het kanon met dubbele loop is een mislukt experimenteel wapen ontwikkeld in de 1
 De lopen vuren niet tegelijkertijd. Hierdoor zijn de kanonskogels heel irregulier in waar zijn naartoe gaan. Het zet ook veel stress op de ketting waardoor deze kan breken.
 \subsubsection{Modellen}
 Met het gebruik van de modellen in hoofdstuk \ref{SoortenModellen}, zien we dat het probleem niet uit de buitenwereld komt maar binnen het systeem zelf plaatsvindt. In het vier variabelen model zou het kanon een probleem hebben in de actuatoren.
+
+\subsection{Nucleaire testen op het eiland Bikini Atoll}
+\subsubsection{Achtergrond}
+Nucleaire bom testen werden gehouden op het eiland Bikini Atoll. Een van deze bommen is had een explosie van 15 megaton in plaats van de verwachte 4-8 megaton.
+\subsubsection{Wat ging er mis?}
+Uitgaande van de bestaande kennis van fysica van de tijd had de bom een verwachte lading van 6 megaton moeten bedragen. Dat de kennis incompleet was werd duidelijk toen de daadwerkelijke explosie meer dan twee zo hoog was.
+\subsubsection{Modellen}
+Met het gebruik van de modellen in hoofdstuk \ref{SoortenModellen}, zien we dat het probleem niet uit de buitenwereld komt maar binnen het systeem zelf plaatsvond. Er was een onverwachte reactie in de lithium in het systeem \cite{castlebravonuke}.
+
 \section{Requirements}
 
 In dit hoofdstuk wordt er over requirements en specificaties aangeduid. De definities voor deze termen zijn die in dit document zullen worden aangehouden zijn die van \cite{thompson2000requirements}. \newline
@@ -141,17 +150,25 @@ Een deadlock is een situatie waarin er nooit meer verdere state transities mogel
 Wanneer een model een oneindig aantal transities kan maken in een bepaalde tijd dat wordt er gesproken van zeno gedrag \cite{uppaaltutorialmodelingpatterns} \cite{leine2011zeno}.
 \section{Logica}
 
-Dit is een herhaling van eerste jaars logica.
+Dit is een herhaling van eerste jaars logica. Er wordt met modale logica gewerkt, waarbij voor ons vooral de focus ligt op temporale logica, een aantal van de voorbeelden zijn hierop afgesteld.
 
 \subsection{Propositielogica}
 
 Propositie zijn uitspraken die waar of onwaar kunnen zijn. Propositielogica is houdt zich bezig met het redeneren van deze logica.
 
-\subsection{Predicatenlogica}
+\subsection{Predicatenlogica} \label{PredicateLogic}
+
+Predicaten zijn statements over de relaties tussen dingen. Deze logica bevat de universele en existentiële kwantoren of respectievelijk '\forall' en '\exists'.
+
+Voorbeelden van deze logica zijn statements zoals: Voor alle appels geld dat ze fruit zijn, of voor alle het fruit geldt dat er uiteindelijk een zal zijn die een appel is.
 
 \subsection{Kwantoren}
 
+In de logica bestaan zogeheten kwantoren. Kwantoren zijn symbolen die relaties tussen variabelen aangeven. Hierboven onder het kopje \nameref{PredicateLogic} zijn al twee kwantoren aangeduid namelijk '\forall' en '\exists'.
+
 \subsection{Dualiteiten}
+
+Een dualiteit is een wanneer een statement die naar voren komt wanneer een andere statement een negatie ondergaat. Als voorbeeld, in modale logica, als de propositie 'voor alle P geld dat deze altijd waar is' een negatie ondergaat dan kunnen wij door dualteit de proposite maken 'voor alle p geld dat deze soms waar is'.
 
 \section{Computation tree logic}
 //week 3
@@ -185,11 +202,13 @@ Een bepaalde staat kan een transitie uitvoeren naar een staat of staten waarvoor
 
 \subsection{Operator: p U q}
 
+p en q zijn voor dit voorbeeld verzameling. p U q betekent 'alle objecten die tot p of q behoren' alsof p en q samen één grote verzameling vormen, U staat dan ook voor Union.
+
 \subsection{Operator: p R q}
 
 \subsection{Fairness}
 
-Een bepaalde conditie zal uiteindelijk waar zijn.
+Een eis van het systeem dat deze op eerlijke wijze de volgende staat kiest. Het doel hierbij is dat elke state in het systeem uiteindelijk waar zal zijn.
 
 \subsection{Liveness}
 
