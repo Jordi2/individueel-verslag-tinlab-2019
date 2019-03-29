@@ -12,15 +12,15 @@
   \centering
     \vfill
     {\bfseries\Huge
-      Verslag Tinlab Advanced Algorithms \\
+      Individueel Verslag Tinlab Advanced Algorithms \\
         \vskip2cm
       }
       {\bfseries\Large
-        S. T. Udent\\
+        Jordi Luijk\\
       }
       {
         \bfseries\normalsize
-        176-671\\
+        0889529\\
         \vskip1cm
         \today\\
     }    
@@ -75,6 +75,11 @@ Nucleaire bom testen werden gehouden op het eiland Bikini Atoll. Een van deze bo
 Uitgaande van de bestaande kennis van fysica van de tijd had de bom een verwachte lading van 6 megaton moeten bedragen. Dat de kennis incompleet was werd duidelijk toen de daadwerkelijke explosie meer dan twee zo hoog was.
 \subsubsection{Modellen}
 Met het gebruik van de modellen in hoofdstuk \ref{SoortenModellen}, zien we dat het probleem niet uit de buitenwereld komt maar binnen het systeem zelf plaatsvond. Er was een onverwachte reactie in de lithium in het systeem \cite{castlebravonuke}.
+
+\section{Research}
+
+\subsection{Mode Confusion}
+Systemen hebben bepaalde staten waarin zei zich kunnen bevinden en een gebruiker heeft een mentaal model hiervan. Wanneer het mentale model en de tekens die het systeem afgeeft niet meer in sync zijn dan spreken we van 'mode confusion' \cite{bredereke2002rigorous}. Dit fenomeen kan gevaarlijke gevolgen hebben.
 
 \section{Requirements}
 
@@ -132,10 +137,8 @@ Zoals de naam suggereert bestaat het vier variabelen model uit vier onderdelen. 
 \end{figure}
 
 \subsection{Tijd}
-//Behandeld in week 2 \newline
 In Uppaal wordt tijd globaal op hetzelfde tempo bijgehouden. Tijd wordt in klokken bijgehouden en kan op elk moment worden uitgelezen of gereset. \cite{uppaalsmalltutorial}
 \subsection{Guards en invarianten}
-//Behandeld in week 2 \newline 
 Guards zijn condities die op transities worden geplaatst, aan deze condities moet worden voldaan voordat deze transitie mogelijk is.\cite{uppaalsmalltutorial}
 
 
@@ -146,7 +149,6 @@ guards condities op transities,
 Een deadlock is een situatie waarin er nooit meer verdere state transities mogelijke zijn \cite{uppaalintro}.
 
 \subsection{Zeno gedrag}
-//Behandeld in week 2 \newline
 Wanneer een model een oneindig aantal transities kan maken in een bepaalde tijd dat wordt er gesproken van zeno gedrag \cite{uppaaltutorialmodelingpatterns} \cite{leine2011zeno}.
 \section{Logica}
 
@@ -171,10 +173,19 @@ In de logica bestaan zogeheten kwantoren. Kwantoren zijn symbolen die relaties t
 Een dualiteit is een wanneer een statement die naar voren komt wanneer een andere statement een negatie ondergaat. Als voorbeeld, in modale logica, als de propositie 'voor alle P geld dat deze altijd waar is' een negatie ondergaat dan kunnen wij door dualteit de proposite maken 'voor alle p geld dat deze soms waar is'.
 
 \section{Computation tree logic}
-//week 3
-A Always E Exists F Eventually G Globally X Next
 
 \subsection{De computation tree}
+
+De computatie boom is een model om tijdsgebonden logica te modelleren. \\\\
+In dit model bestaan de volgende temporale operatoren:
+\begin{itemize}
+    \item A Always
+    \item E Exists
+    \item F Eventually
+    \item G Globally
+    \item X Next
+\end{itemize}
+Deze operatoren kunnen worden gecombineerd zoals hieronder is aangetoond.
 
 \subsection{Operator: Always Global (AG)}
 
